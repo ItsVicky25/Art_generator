@@ -37,6 +37,36 @@ The goal is to empower users to express their creativity through AI in a seamles
 - **Machine Learning:** NumPy, TensorFlow/PyTorch (for deep learning models)
 - **Deployment:** Vercel/Netlify (Frontend), Heroku/AWS/Google Cloud (Backend)
 
+##project-structure
+
+###Frontend File Structure
+
+Artify-Studio/
+├── public/                           # Public files like index.html
+├── src/                              # Source code for the app
+│   ├── assets/                       # Images, icons, styles, etc.
+│   ├── components/                   # All reusable components
+│   │   ├── Header.js                 # Header component
+│   │   ├── Sidebar.js                # Sidebar for navigating styles, options
+│   │   ├── ImageUpload.js            # Image upload component
+│   │   ├── StyleSelector.js          # Style selection dropdown/component
+│   │   ├── ImagePreview.js           # Preview of the transformed image
+│   │   ├── StyleAdjustments.js       # Controls for adjusting style intensity
+│   │   ├── EffectControls.js         # Adjustments like brightness, contrast
+│   │   ├── LoadingSpinner.js         # Loading spinner for transformations
+│   │   └── Footer.js                 # Footer component
+│   ├── pages/                        # Pages that layout the app's structure
+│   │   ├── Home.js                   # Home page layout
+│   │   ├── Editor.js                 # Editor page with the main image transformation
+│   │   └── Gallery.js                # Gallery page for viewing previous artworks
+│   ├── utils/                        # Helper functions (e.g., API calls)
+│   │   └── api.js                    # API configuration
+│   ├── App.js                        # Main app component
+│   ├── index.js                      # Entry point of the React app
+│   ├── App.css                       # Global styles
+│   └── theme.js                      # Theme customization (colors, font styles)
+└── package.json                      # Project dependencies
+
 
 ## License 📜
 
