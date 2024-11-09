@@ -41,32 +41,34 @@ The goal is to empower users to express their creativity through AI in a seamles
 
 ###Frontend File Structure
 
-Artify-Studio/
-├── public/                           # Public files like index.html
-├── src/                              # Source code for the app
-│   ├── assets/                       # Images, icons, styles, etc.
-│   ├── components/                   # All reusable components
-│   │   ├── Header.js                 # Header component
-│   │   ├── Sidebar.js                # Sidebar for navigating styles, options
-│   │   ├── ImageUpload.js            # Image upload component
-│   │   ├── StyleSelector.js          # Style selection dropdown/component
-│   │   ├── ImagePreview.js           # Preview of the transformed image
-│   │   ├── StyleAdjustments.js       # Controls for adjusting style intensity
-│   │   ├── EffectControls.js         # Adjustments like brightness, contrast
-│   │   ├── LoadingSpinner.js         # Loading spinner for transformations
-│   │   └── Footer.js                 # Footer component
-│   ├── pages/                        # Pages that layout the app's structure
-│   │   ├── Home.js                   # Home page layout
-│   │   ├── Editor.js                 # Editor page with the main image transformation
-│   │   └── Gallery.js                # Gallery page for viewing previous artworks
-│   ├── utils/                        # Helper functions (e.g., API calls)
-│   │   └── api.js                    # API configuration
-│   ├── App.js                        # Main app component
-│   ├── index.js                      # Entry point of the React app
-│   ├── App.css                       # Global styles
-│   └── theme.js                      # Theme customization (colors, font styles)
-└── package.json                      # Project dependencies
+## Components
 
+### `Header.js`
+This component represents the header of the application, displaying the app's logo and the navigation links.
+
+### `Sidebar.js`
+This is the sidebar component used for navigation, allowing users to switch between various styles, settings, or page sections.
+
+### `ImageUpload.js`
+This component provides the functionality to upload images from the user's device for AI-based style transformations.
+
+### `StyleSelector.js`
+A dropdown component that enables users to choose from a variety of pre-defined artistic styles to apply to their images.
+
+### `ImagePreview.js`
+This component shows a preview of the image after applying the selected style, giving users a live look at how their image will appear.
+
+### `StyleAdjustments.js`
+Allows users to adjust the intensity of the selected style, making it more or less pronounced.
+
+### `EffectControls.js`
+This component gives users the ability to adjust image properties such as brightness, contrast, saturation, etc.
+
+### `LoadingSpinner.js`
+A loading spinner that is displayed while the image is being processed, giving feedback to the user during the transformation process.
+
+### `Footer.js`
+Displays footer content such as app details, copyright, or additional links.
 
 ## License 📜
 
