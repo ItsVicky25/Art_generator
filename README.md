@@ -43,32 +43,16 @@ The goal is to empower users to express their creativity through AI in a seamles
 
 ## Components
 
-### `Header.js`
-This component represents the header of the application, displaying the app's logo and the navigation links.
+**`Header.js`**: This component represents the header of the application, displaying the app's logo and navigation links.
+- **`Sidebar.js`**: This is the sidebar component used for navigation, allowing users to switch between various styles, settings, or page sections.
+- **`ImageUpload.js`**: This component provides the functionality to upload images from the user's device for AI-based style transformations.
+- **`StyleSelector.js`**: A dropdown component that enables users to choose from a variety of pre-defined artistic styles to apply to their images.
+- **`ImagePreview.js`**: This component shows a preview of the image after applying the selected style, giving users a live look at how their image will appear.
+- **`StyleAdjustments.js`**: Allows users to adjust the intensity of the selected style, making it more or less pronounced.
+- **`EffectControls.js`**: This component gives users the ability to adjust image properties such as brightness, contrast, saturation, etc.
+- **`LoadingSpinner.js`**: A loading spinner that is displayed while the image is being processed, giving feedback to the user during the transformation process.
+- **`Footer.js`**: Displays footer content such as app details, copyright, or additional links.
 
-### `Sidebar.js`
-This is the sidebar component used for navigation, allowing users to switch between various styles, settings, or page sections.
-
-### `ImageUpload.js`
-This component provides the functionality to upload images from the user's device for AI-based style transformations.
-
-### `StyleSelector.js`
-A dropdown component that enables users to choose from a variety of pre-defined artistic styles to apply to their images.
-
-### `ImagePreview.js`
-This component shows a preview of the image after applying the selected style, giving users a live look at how their image will appear.
-
-### `StyleAdjustments.js`
-Allows users to adjust the intensity of the selected style, making it more or less pronounced.
-
-### `EffectControls.js`
-This component gives users the ability to adjust image properties such as brightness, contrast, saturation, etc.
-
-### `LoadingSpinner.js`
-A loading spinner that is displayed while the image is being processed, giving feedback to the user during the transformation process.
-
-### `Footer.js`
-Displays footer content such as app details, copyright, or additional links.
 
 ## License 📜
 
