@@ -16,6 +16,15 @@
 - [Contributing](#contributing)
 - [License](#license)
 
+## Project Overview 🖼️
+
+Artify Studio is a web-based tool for creating AI-generated artwork from user-uploaded images. It provides an easy-to-use interface where users can:
+- **Upload Images**
+- **Choose Art Styles**
+- **Blend Multiple Styles**
+- **Experiment with Intensity and Effects**
+
+The goal is to empower users to express their creativity through AI in a seamless, intuitive, and visually engaging platform.
   
 ## Features 🌟
 
