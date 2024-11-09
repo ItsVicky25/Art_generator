@@ -8,12 +8,7 @@
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Project Structure](#project-structure)
-- [API Endpoints](#api-endpoints)
-- [Customization](#customization)
-- [Future Enhancements](#future-enhancements)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Project Overview 🖼️
@@ -41,3 +36,8 @@ The goal is to empower users to express their creativity through AI in a seamles
 - **Backend:** Flask, Python
 - **Machine Learning:** NumPy, TensorFlow/PyTorch (for deep learning models)
 - **Deployment:** Vercel/Netlify (Frontend), Heroku/AWS/Google Cloud (Backend)
+
+
+## License 📜
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
