@@ -1,4 +1,5 @@
 // src/App.js
+
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
@@ -10,7 +11,9 @@ import m2 from './m2.jpg';
 // Import components
 import Header from './Header'; // Import Header component
 import GetStarted from './GetStarted';
-
+import UploadedImagePage from './UploadedImagePage'; // Import the new page
+import Login from './Login'; // Import the login page
+import Signup from './Signup'; // Import the signup page
 function App() {
   return (
     <Router>
@@ -117,6 +120,9 @@ function App() {
             }
           />
           <Route path="/get-started" element={<GetStarted />} />
+          <Route path="/uploaded-image" element={<UploadedImagePage />} /> {/* New Route */}
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
       </div>
     </Router>

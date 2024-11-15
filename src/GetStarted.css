@@ -1,185 +1,105 @@
+/* Container for the whole component */
 .get-started {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: Arial, sans-serif;
-    padding: 20px;
-  }
-  
-  .upload-area {
-    border: 2px dashed #ccc;
-    padding: 20px;
-    text-align: center;
-    cursor: pointer;
-    margin-bottom: 20px;
-  }
-  
-  .upload-area:hover {
-    background-color: #f0f0f0;
-  }
-  
-  .image-preview {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:disabled {
-    background-color: #cccccc;
-  }
-  
-  progress {
-    margin-top: 10px;
-    width: 100%;
-    height: 20px;
-  }
-  
-  label {
-    cursor: pointer;
-  }
-  
-  button {
-    margin-top: 10px;
-  }
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  backdrop-filter: blur(10px); /* Glassy effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+}
 
-  
-  @font-face {
-    font-family: "Geist Sans";
-    src: url("https://assets.codepen.io/605876/GeistVF.ttf") format("truetype");
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  :root {
-    --speed: 0.25s;
-  }
-  
-  body {
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
-    background: hsl(0 0% 4%);
-    font-family: "Geist Sans", sans-serif;
-  }
-  
-  button {
-    cursor: pointer;
-    position: relative;
-    display: flex;
-    border: 1px solid hsl(0 0% 100% / 0.25);
-    border-radius: 100px;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: auto 3.5em;
-    gap: 1.5em;
-    font-family: "Geist Sans", sans-serif;
-    font-weight: 80;
-    background:
-      hsl(280 0% 12%);
-    color: hsl(0 0% 90%);
-    padding: 0.5em 0.5em 0.5em 1.5em;
-    place-items: center;
-    box-shadow:
-      0 1px inset hsl(0 0% 100% / 0.5),
-      0 -10px 20px 10px hsl(0 0% 0% / 0.5) inset,
-      0 10px 20px 10px hsl(0 0% 50% / 0.25) inset,
-      0 1px hsl(0 0% 2% / 0.75);
-    letter-spacing: 0.05ch;
-  }
-  
-  button:focus-visible {
-    outline-offset: 0.5em;
-    outline-color: hsl(280 80% 80% / 0.5);
-  }
-  
-  .icon {
-    width: 100%;
-    aspect-ratio: 1;
-    border-radius: 100%;
-  }
-  
-  .backdrop {
-    position: absolute;
-    inset: 0.5em;
-  }
-  
-  .icon {
-    overflow: hidden;
-  }
-  
-  .icon svg {
-    width: 50%;
-    overflow: visible !important;
-  }
-  
-  svg path:nth-of-type(2) {
-    transform-box: fill-box;
-    transform-origin: 50% 50%;
-    transition:
-      fill var(--speed),
-      rotate var(--speed),
-      scale var(--speed),
-      translate var(--speed);
-  }
-  
-  svg path:nth-of-type(1) {
-    translate: 5rem 0;
-    transform-box: fill-box;
-    transition: translate var(--speed);
-    opacity: 0.75;
-  }
-  
-  button:is(:hover, :focus-visible) svg path:nth-of-type(2) {
-    translate: 0 -50%;
-    rotate: 290deg;
-    scale: 0.65;
-    fill: hsl(0 0% 20%);
-    transition-timing-function: ease, ease, cubic-bezier(.2, .7, .9, 1.5);
-  }
-  
-  button:is(:hover, :focus-visible) svg path:nth-of-type(1) {
-    translate: 0 0;
-  }
-  
-  .action {
-    position: absolute;
-    right: 0;
-    height: 100%;
-    background:
-      linear-gradient(transparent 50%, hsl(0 0% 30% / 0.5)),
-      hsl(0 0% 0%);
-    box-shadow: 0 -1px inset hsl(0 0% 100% / 0.35);
-    width: 3.5em;
-    aspect-ratio: 1;
-    transition: width var(--speed);
-    border-radius: 100px;
-  }
-  
-  .icon {
-    color: hsl(0 0% 90%);
-    display: grid;
-    place-items: center;
-    z-index: 2;
-  }
-  
-  .text {
-    display: inline-block;
-    z-index: 2;
-    padding: 0 2rem;
-  }
-  
-  button:is(:hover, :focus-visible) .action {
-    width: 100%;
-  }
+/* Title of the section */
+.get-started h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff; /* Change text color for visibility */
+}
+
+/* Section for uploading images */
+.upload-section {
+  margin-top: 20px;
+}
+
+/* Buttons for image upload */
+.upload-buttons {
+  margin-bottom: 20px;
+}
+
+.upload-button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+.remove-all-button {
+  background-color: #ff5733;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Preview of uploaded images */
+.image-preview {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Container for each uploaded image */
+.image-container {
+  margin: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Styling for the uploaded image */
+.image-container img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+/* Remove button for each image */
+.remove-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Text when no images are uploaded */
+.no-images-text {
+  color: #888;
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* Icon styling */
+.icon {
+  margin-right: 8px;
+}
