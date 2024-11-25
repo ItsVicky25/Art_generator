@@ -38,4 +38,6 @@ The goal is to empower users to express their creativity through AI in a seamles
 
 ## License 📜
 
+**https://www.kaggle.com/datasets/defileroff/comic-faces-paired-synthetic/code**
+
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
