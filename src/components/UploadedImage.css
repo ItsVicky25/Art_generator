@@ -1,0 +1,201 @@
+/* Navbar */
+.navbar {
+  background-color: #292929;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #444;
+  height: 50px; /* Fixed height */
+  box-sizing: border-box;
+}
+
+.navbar h1 {
+  font-size: 18px;
+  color: #f0f0f0;
+  font-weight: bold;
+  margin: 0;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  cursor: pointer;
+  font-size: 14px;
+  color: #ccc;
+  transition: color 0.2s;
+}
+
+.navbar ul li:hover {
+  color: #fff;
+}
+
+/* Editor Layout */
+.editor-body {
+  display: grid;
+  grid-template-columns: 250px auto 250px; /* Fixed widths for sidebars */
+  grid-template-rows: 1fr 60px; /* Main area and toolbar height */
+  grid-template-areas:
+    "left-sidebar workspace right-sidebar"
+    "bottom-toolbar bottom-toolbar bottom-toolbar";
+  height: calc(100vh - 50px); /* Full viewport height minus navbar */
+  width: 100vw; /* Full viewport width */
+  margin: 0; /* No gaps around the layout */
+  gap: 0; /* Remove space between grid areas */
+  overflow: hidden; /* Prevent scrolling */
+  box-sizing: border-box; /* Ensure no padding affects layout */
+}
+
+/* Left Sidebar */
+.left-sidebar {
+  grid-area: left-sidebar;
+  background-color: #212121;
+  padding: 15px;
+  border-right: 2px solid #444;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Right Sidebar */
+.right-sidebar {
+  grid-area: right-sidebar;
+  background-color: #212121;
+  padding: 15px;
+  border-left: 2px solid #444;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Workspace */
+.workspace {
+  grid-area: workspace;
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Bottom Toolbar */
+.bottom-toolbar {
+  grid-area: bottom-toolbar;
+  background-color: #292929;
+  padding: 10px 20px;
+  border-top: 2px solid #444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  box-sizing: border-box;
+  margin: 0; /* Ensure no gap from sections above */
+}
+
+/* General Styles */
+button,
+input[type="range"] {
+  transition: all 0.2s ease-in-out;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Spring Tools Dropdown (hidden by default) */
+.spring-tools {
+  display: none; /* Hidden by default */
+  position: absolute; /* Positioned relative to the button */
+  top: 100%; /* Positioned below the toggle button */
+  left: 50%; /* Centered horizontally */
+  transform: translateX(-50%); /* Align to the center */
+  background-color: #FFFFFF; /* White background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  padding: 10px; /* Padding around the content */
+  z-index: 100; /* Ensure it's above other content */
+}
+
+/* When Spring Tools are shown, display the options */
+button:focus + .spring-tools,
+button:active + .spring-tools {
+  display: block; /* Show the spring tools */
+}
+
+/* Individual Tool Button Styling */
+.spring-tools button {
+  background-color: #f0f0f0; /* Light grey background for tools */
+  color: #596778; /* Dark text color */
+  border: 1px solid #cccccc; /* Border to separate buttons */
+  border-radius: 4px; /* Rounded corners */
+  padding: 8px 16px; /* Padding for button content */
+  margin: 5px 0; /* Space between buttons */
+  width: 100%; /* Full width of container */
+  text-align: left; /* Align text to the left */
+  font-size: 14px; /* Set font size */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+}
+
+.spring-tools button:hover {
+  background-color: #669AE1; /* Blue background on hover */
+  color: #ffffff; /* White text color on hover */
+}
+
+/* Styling for the Menu Item Hover */
+.menu-item {
+  padding: 10px;
+  background: #f0f0f0;
+  color: #596778;
+  border-radius: 4px;
+  margin: 5px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.menu-item:hover {
+  background: #EEEEEE;
+  color: #3290B1;
+}
+
+/* Add transitions to tool buttons and menu items */
+.menu-item:nth-child(1), .spring-tools button:nth-child(1) {
+  transition-duration: 180ms;
+}
+
+.menu-item:nth-child(2), .spring-tools button:nth-child(2) {
+  transition-duration: 220ms;
+}
+
+/* Add icon style for menu buttons if needed */
+.menu-item i, .spring-tools button i {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+/* Optional: Make button sizes responsive */
+@media (max-width: 768px) {
+  button {
+    width: 60px;
+    height: 60px;
+  }
+
+  .spring-tools {
+    width: 150px; /* Adjust the width of the tool dropdown */
+  }
+
+  .spring-tools button {
+    font-size: 12px;
+  }
+}

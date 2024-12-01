@@ -11,9 +11,10 @@ import m2 from './m2.jpg';
 // Import components
 import Header from './Header'; // Import Header component
 import GetStarted from './GetStarted';
-import UploadedImagePage from './UploadedImagePage'; // Import the new page
+import UploadedImagePage from './components/UploadedImage'; // Import the new page
 import Login from './Login'; // Import the login page
 import Signup from './Signup'; // Import the signup page
+
 function App() {
   return (
     <Router>

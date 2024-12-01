@@ -27,30 +27,48 @@
 
 /* Buttons for image upload */
 .upload-buttons {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .upload-button {
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
-  padding: 12px 25px;
-  font-size: 16px;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  margin-right: 10px;
+  padding: 10px 20px; /* Slightly larger padding for a more prominent button */
+    background: linear-gradient(90deg, #00aaff, #0056b3); /* Gradient background */
+    color: #fff; /* White text for contrast */
+    border: none; /* No border */
+    border-radius: 25px; /* Fully rounded button */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Make the text bold */
+    box-shadow: 0 4px 10px rgba(0, 170, 255, 0.5); /* Add a subtle glow */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    backdrop-filter: blur(6px); /* Apply blur effect to button */
+    -webkit-backdrop-filter: blur(6px); /* For Safari */
+}
+.upload-button:hover {
+  background: linear-gradient(90deg, #0056b3, #00aaff); /* Reverse gradient */
+  box-shadow: 0 6px 15px rgba(0, 170, 255, 0.7); /* Intensify the glow */
+  transform: scale(1.05); /* Slightly enlarge the button */
 }
 
 .remove-all-button {
-  background-color: #ff5733;
-  color: #fff;
-  border: none;
-  padding: 12px 25px;
-  font-size: 16px;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  padding: 10px 20px; /* Slightly larger padding for a more prominent button */
+    background: linear-gradient(90deg, #be4c4c, #d31111); /* Gradient background */
+    color: #fff; /* White text for contrast */
+    border: none; /* No border */
+    border-radius: 25px; /* Fully rounded button */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Make the text bold */
+    box-shadow: 0 4px 10px rgba(255, 22, 22, 0.5); /* Add a subtle glow */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    backdrop-filter: blur(6px); /* Apply blur effect to button */
+    -webkit-backdrop-filter: blur(6px); /* For Safari */
+}
+
+.remove-all-button:hover {
+  background: linear-gradient(90deg, #b30000, #d64141); /* Reverse gradient */
+  box-shadow: 0 6px 15px rgba(255, 0, 0, 0.7); /* Intensify the glow */
+  transform: scale(1.05); /* Slightly enlarge the button */
 }
 
 /* Preview of uploaded images */

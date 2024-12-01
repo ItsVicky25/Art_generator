@@ -564,4 +564,42 @@ footer .contact {
   }
 }
 
+.dropdown {
+  position: absolute;
+  top: 40px;  /* Adjust based on input field height */
+  left: 0;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-height: 200px;  /* Max height for the dropdown */
+  overflow-y: auto;
+  border-radius: 4px;
+  width: 100%;
+  z-index: 10;
+}
 
+.dropdown-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+.tool-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: normal;
+}
+
+.tool-link:hover {
+  color: #007bff;
+}
