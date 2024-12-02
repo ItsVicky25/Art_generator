@@ -4,7 +4,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 
-// Import images
+
 import m1 from './m1.jpg';
 import m2 from './m2.jpg';
 
