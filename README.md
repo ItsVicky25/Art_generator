@@ -8,7 +8,7 @@
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
-- [License](#license
+  
 
 ## Project Overview 🖼️
 
