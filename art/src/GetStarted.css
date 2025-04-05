@@ -1,0 +1,123 @@
+/* Container for the whole component */
+.get-started {
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  backdrop-filter: blur(10px); /* Glassy effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+}
+
+/* Title of the section */
+.get-started h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff; /* Change text color for visibility */
+}
+
+/* Section for uploading images */
+.upload-section {
+  margin-top: 20px;
+}
+
+/* Buttons for image upload */
+.upload-buttons {
+  margin-bottom: 40px;
+}
+
+.upload-button {
+  padding: 10px 20px; /* Slightly larger padding for a more prominent button */
+    background: linear-gradient(90deg, #00aaff, #0056b3); /* Gradient background */
+    color: #fff; /* White text for contrast */
+    border: none; /* No border */
+    border-radius: 25px; /* Fully rounded button */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Make the text bold */
+    box-shadow: 0 4px 10px rgba(0, 170, 255, 0.5); /* Add a subtle glow */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    backdrop-filter: blur(6px); /* Apply blur effect to button */
+    -webkit-backdrop-filter: blur(6px); /* For Safari */
+}
+.upload-button:hover {
+  background: linear-gradient(90deg, #0056b3, #00aaff); /* Reverse gradient */
+  box-shadow: 0 6px 15px rgba(0, 170, 255, 0.7); /* Intensify the glow */
+  transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+.remove-all-button {
+  padding: 10px 20px; /* Slightly larger padding for a more prominent button */
+    background: linear-gradient(90deg, #be4c4c, #d31111); /* Gradient background */
+    color: #fff; /* White text for contrast */
+    border: none; /* No border */
+    border-radius: 25px; /* Fully rounded button */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Make the text bold */
+    box-shadow: 0 4px 10px rgba(255, 22, 22, 0.5); /* Add a subtle glow */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    backdrop-filter: blur(6px); /* Apply blur effect to button */
+    -webkit-backdrop-filter: blur(6px); /* For Safari */
+}
+
+.remove-all-button:hover {
+  background: linear-gradient(90deg, #b30000, #d64141); /* Reverse gradient */
+  box-shadow: 0 6px 15px rgba(255, 0, 0, 0.7); /* Intensify the glow */
+  transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Preview of uploaded images */
+.image-preview {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Container for each uploaded image */
+.image-container {
+  margin: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Styling for the uploaded image */
+.image-container img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+/* Remove button for each image */
+.remove-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Text when no images are uploaded */
+.no-images-text {
+  color: #888;
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* Icon styling */
+.icon {
+  margin-right: 8px;
+}
