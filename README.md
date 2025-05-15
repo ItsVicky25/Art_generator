@@ -24,7 +24,7 @@ Artify Studio is an AI-powered web application that transforms user-uploaded ima
 - **Backend**: Flask / FastAPI / Django
 - **Database**: MongoDB / Firebase (if storing user data)
 - **Cloud & Deployment**: AWS / GCP / Azure (for scalable AI model hosting)
-- **GPU Acceleration**: CUDA, TensorRT, TPUs
+- **GPU Acceleration**: CUDA, TensorRT, TPUs.
 
 ## System Architecture & Workflow
 1. **User uploads an image**
