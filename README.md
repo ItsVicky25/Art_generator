@@ -124,3 +124,12 @@ rgr
 - Due Date: 2025-05-30
 - Priority: high
 - Status: pending
+
+
+# Reminders
+
+
+## scs
+- Description: csc
+- Reminder Date: 2025-05-15T15:13
+- Status: Active
