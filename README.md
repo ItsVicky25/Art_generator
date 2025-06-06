@@ -93,3 +93,11 @@ For any issues or feature requests, feel free to open an issue on GitHub or cont
 cs
 
 csc
+
+# Reminders
+
+
+## dcd
+- Description: cs
+- Reminder Date: 2025-06-12T22:48
+- Status: Active
