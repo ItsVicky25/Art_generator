@@ -1,0 +1,138 @@
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.25); /* Semi-transparent white background */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Soft box shadow */
+    backdrop-filter: blur(6px); /* Apply blur effect to background */
+    -webkit-backdrop-filter: blur(6px); /* For Safari */
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Light border */
+  }
+  
+ 
+  
+  /* Logo Styling */
+  .logo {
+    height: 40px; /* Adjust size of the logo */
+  }
+  
+  /* Search Bar Styling */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: all 0.3s ease-in-out; /* Animate the search bar when focused */
+  }
+  
+  .search-bar input {
+    padding: 12px 20px;
+    width: 250px;
+    border-radius: 30px; /* Rounded input box */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Lighter border */
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    backdrop-filter: blur(6px); /* Apply blur effect to input background */
+    -webkit-backdrop-filter: blur(6px); /* For Safari */
+    transition: width 0.4s ease, background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease; /* Smooth animations */
+    cursor: pointer;
+  }
+  
+  /* Glow effect when the input field is focused */
+  .search-bar input:focus {
+    outline: none;
+    border: 1px solid #00aaff; /* Focus border color */
+    background-color: rgba(255, 255, 255, 0.8); /* Lighter background on focus */
+    width: 300px; /* Expand the input field on focus */
+    
+    /* Glow effect */
+    box-shadow: 0 0 15px rgba(0, 170, 255, 0.7); /* Light blue glow */
+  }
+  
+  /* Placeholder Styling */
+  .search-bar input::placeholder {
+    color: rgba(0, 0, 0, 0.6); /* Placeholder text color */
+    font-style: italic;
+    transition: color 0.3s ease; /* Smooth transition for placeholder text */
+  }
+  
+  /* Change placeholder color on focus */
+  .search-bar input:focus::placeholder {
+    color: rgba(0, 0, 0, 0.4); /* Placeholder color change on focus */
+  }
+  
+  /* Search Icon Styling */
+  .search-bar .search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%); /* Center the icon vertically */
+    color: #00aaff;
+    font-size: 18px;
+    pointer-events: none; /* Prevent clicks on the icon */
+    opacity: 0.5; /* Initially set the icon's opacity */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Icon animations */
+  }
+  
+  /* Increase the size and opacity of the search icon on focus */
+  .search-bar input:focus + .search-icon {
+    opacity: 1; /* Make the icon fully visible on focus */
+    transform: translateY(-50%) scale(1.2); /* Slightly increase the size of the icon */
+  }
+  
+  /* Authentication Button Styling */
+  .auth-buttons {
+    margin-left: 15px;
+  }
+  
+  .auth-button {
+    padding: 10px 20px; /* Slightly larger padding for a more prominent button */
+    background: linear-gradient(90deg, #00aaff, #0056b3); /* Gradient background */
+    color: #fff; /* White text for contrast */
+    border: none; /* No border */
+    border-radius: 25px; /* Fully rounded button */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Make the text bold */
+    box-shadow: 0 4px 10px rgba(0, 170, 255, 0.5); /* Add a subtle glow */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    backdrop-filter: blur(6px); /* Apply blur effect to button */
+    -webkit-backdrop-filter: blur(6px); /* For Safari */
+}
+
+/* Hover Effect */
+.auth-button:hover {
+    background: linear-gradient(90deg, #0056b3, #00aaff); /* Reverse gradient */
+    box-shadow: 0 6px 15px rgba(0, 170, 255, 0.7); /* Intensify the glow */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Active State */
+.auth-button:active {
+    background: #004080; /* Darker shade for active state */
+    box-shadow: 0 2px 6px rgba(0, 170, 255, 0.3); /* Reduce shadow for pressed effect */
+    transform: scale(0.98); /* Slightly shrink on click */
+}
+
+  .auth-button:hover {
+    background-color: #0088cc;
+  }
+  
+  /* Header and Logo Styling */
+  .header {
+    position: relative;
+    z-index: 0;
+    padding: 0px;
+    background-color: #020202;
+  }
+  
+  .logo-link {
+    display: inline-block;
+  }
+  
+  .logo {
+    max-width: 80px;
+    height: auto;
+  }
+  
