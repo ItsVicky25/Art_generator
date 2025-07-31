@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "emoji-picker-react": "^4.13.2",
+    "html2canvas": "^1.4.1",
+    "react-rnd": "^10.5.2"
+  }
+}
