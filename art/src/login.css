@@ -1,45 +1,195 @@
+/* Login Page - Complete Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* Full page container */
+.login-page {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #000000 0%, #050505 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 20px;
+}
+
+/* Auth container - centered card */
+.auth-container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+/* Back link */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #64ffda;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.back-link:hover {
+  background: rgba(100, 255, 218, 0.1);
+  border-color: rgba(100, 255, 218, 0.3);
+}
+
+/* Title and subtitle */
+.auth-container h2 {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.auth-subtitle {
+  color: #b0b0b0;
+  font-size: 16px;
+  margin-bottom: 32px;
+  font-weight: 400;
+}
+
+/* Error message */
+.error-message {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #fca5a5;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Form styling */
+.auth-container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input fields */
+.auth-container form input {
+  width: 100%;
+  padding: 16px 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.auth-container form input:focus {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #64ffda;
+  box-shadow: 0 0 0 3px rgba(100, 255, 218, 0.1);
+}
+
+.auth-container form input::placeholder {
+  color: #888888;
+  font-weight: 400;
+}
+
+.auth-container form input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Submit button */
+.auth-container form button {
+  width: 100%;
+  padding: 16px 24px;
+  background: linear-gradient(135deg, #64ffda 0%, #4dd0e1 100%);
+  color: #000000;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-container form button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(100, 255, 218, 0.3);
+}
+
+.auth-container form button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.auth-container form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Auth switch */
+.auth-switch {
+  margin-top: 24px;
+  color: #b0b0b0;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.auth-switch a {
+  color: #64ffda;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 4px;
+  transition: color 0.3s ease;
+}
+
+.auth-switch a:hover {
+  color: #4dd0e1;
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .login-page {
+    padding: 16px;
+  }
+  
   .auth-container {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    width: 90%;
-    max-width: 400px;
+    padding: 32px 24px;
+    max-width: 100%;
   }
   
   .auth-container h2 {
-    margin-bottom: 20px;
+    font-size: 24px;
   }
   
-  .auth-container form input {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
+  .auth-subtitle {
+    font-size: 14px;
   }
-  
-  .auth-container form input::placeholder {
-    color: #bbb;
-  }
-  
-  .auth-container form button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .auth-container form button:hover {
-    background-color: #45a049;
-  }
-  
+}
